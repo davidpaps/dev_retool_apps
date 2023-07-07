@@ -1,0 +1,42 @@
+id: link1
+type: widget
+subtype: LinkWidget
+template:
+  ordered:
+    - horizontalAlign: right
+    - clickable: false
+    - iconAfter: ''
+    - hidden: false
+    - text: How it works
+    - showUnderline: never
+    - showInEditor: false
+    - tooltipText: ''
+    - allowWrap: false
+    - _disclosedFields:
+        array: []
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: open
+            - pluginId: HowItWorksModal
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    row: 1
+    col: 10
+    height: 0.6
+    width: 2
+createdAt: 2023-03-27T19:50:54.127Z

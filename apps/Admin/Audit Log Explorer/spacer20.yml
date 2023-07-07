@@ -1,0 +1,17 @@
+id: spacer20
+type: widget
+subtype: SpacerWidget
+template:
+  ordered:
+    - hidden: false
+    - maintainSpaceWhenHidden: false
+    - showInEditor: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: AreYouSureModal
+    row: 4.2
+    height: 0.2
+    width: 12
+createdAt: 2023-03-30T09:39:11.336Z
