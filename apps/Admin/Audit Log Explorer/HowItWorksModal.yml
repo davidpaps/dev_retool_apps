@@ -1,0 +1,29 @@
+id: HowItWorksModal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: '{{ true }}'
+    - onModalClose: ''
+    - modalHeightType: auto
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - modalHeight: 625px
+    - onModalOpen: ''
+    - modalWidth: 80%
+    - closeOnOutsideClick: true
+    - loading: ''
+    - disabled: ''
+    - buttonText: How it works
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4.79999999999972
+    col: 10
+    height: 0.8
+    width: 1
+createdAt: 2023-03-27T19:52:42.535Z

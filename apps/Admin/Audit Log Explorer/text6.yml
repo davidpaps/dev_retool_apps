@@ -1,0 +1,34 @@
+id: text6
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: fixed
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        <div style="line-height: 16px">Audit history for all apps within the
+        Retool organization.</div>
+    - style:
+        ordered:
+          - color: rgba(255, 255, 255, 0.65)
+    - _disclosedFields:
+        array:
+          - color
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    row: 0.2
+    height: 0.6
+    width: 6
+createdAt: 2023-03-27T19:50:53.443Z

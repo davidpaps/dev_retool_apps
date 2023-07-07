@@ -1,0 +1,129 @@
+id: auditEventsCatalog
+type: state
+subtype: State
+template:
+  ordered:
+    - _persistedValueGetter: null
+    - _persistedValueSetter: null
+    - persistValue: false
+    - persistedValueKey: ''
+    - value: |-
+        [
+          {
+            "description": "Query runs",
+            "id": "QUERY_RUN"
+          },
+          {
+            "description": "Query previews",
+            "id": "QUERY_PREVIEW"
+          },
+          {
+            "description": "Page views",
+            "id": "PAGE_VIEW"
+          },
+          {
+            "description": "User logs in",
+            "id": "LOGIN"
+          },
+          {
+            "description": "User logs out",
+            "id": "LOGOUT"
+          },
+          {
+            "description": "User signs up",
+            "id": "SIGN_UP"
+          },
+          {
+            "description": "User redeems an invite",
+            "id": "REDEEM_INVITE"
+          },
+          {
+            "description": "User invites another user",
+            "id": "INVITE_USER"
+          },
+          {
+            "description": "User re-sends invite",
+            "id": "RE_INVITE_USER"
+          },
+          {
+            "description": "User runs a query in the Query Library",
+            "id": "PLAYGROUND_QUERY_RUN"
+          },
+          {
+            "description": "User disables two-factor authentication",
+            "id": "DISABLE_TWO_FACTOR_AUTH"
+          },
+          {
+            "description": "User requests a password reset link",
+            "id": "REQUEST_PASSWORD_RESET_LINK"
+          },
+          {
+            "description": "User requests passwordless login",
+            "id": "REQUEST_PASSWORDLESS_LOGIN"
+          },
+          {
+            "description": "User confirms a password reset request",
+            "id": "CONFIRM_PASSWORD_RESET_LINK"
+          },
+          {
+            "description": "User creates a group",
+            "id": "CREATE_GROUP"
+          },
+          {
+            "description": "User updates a group",
+            "id": "UPDATE_GROUP"
+          },
+          {
+            "description": "User deletes a group",
+            "id": "DELETE_GROUP"
+          },
+          {
+            "description": "User adds other users to a group",
+            "id": "ADD_USERS_TO_GROUP"
+          },
+          {
+            "description": "User removes other users from a group",
+            "id": "REMOVE_USERS_FROM_GROUP"
+          },
+          {
+            "description": "User enables another user",
+            "id": "ENABLE_USER"
+          },
+          {
+            "description": "User updates an organization",
+            "id": "UPDATE_ORGANIZATION"
+          },
+          {
+            "description": "User creates a resource",
+            "id": "CREATE_RESOURCE"
+          },
+          {
+            "description": "User deletes a resource",
+            "id": "DELETE_RESOURCE"
+          },
+          {
+            "description": "User exports a page",
+            "id": "PAGE_EXPORT"
+          },
+          {
+            "description": "User creates a workflow",
+            "id": "CREATE_WORKFLOW"
+          },
+          {
+            "description": "User deletes a workflow",
+            "id": "DELETE_WORKFLOW"
+          },
+          {
+            "description": "User releases a workflow",
+            "id": "RELEASE_WORKFLOW"
+          },
+          {
+            "description": "User enables a workflow",
+            "id": "ENABLE_WORKFLOW"
+          },
+          {
+            "description": "User disables a workflow",
+            "id": "DISABLE_WORKFLOW"
+          }
+        ]
+createdAt: 2023-03-28T05:44:00.894Z

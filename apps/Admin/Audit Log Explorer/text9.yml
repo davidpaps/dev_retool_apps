@@ -1,0 +1,70 @@
+id: text9
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        #### How it works
+
+
+        This app pulls data from the internal Postgres database backing this
+        Retool instance. Specifically, it queries the `audit_trail_events`,
+        `resources`, `users`, `resource_folders`, and `pages` tables. 
+
+
+        This app comes with predefined SQL queries, that can be duplicated and
+        modified to surface the specific audit events you desire. To learn more,
+        see the [Audit Logs
+        documentation](https://docs.retool.com/docs/audit-logs).
+
+
+        ***
+
+        #### Points to remember
+
+
+        ###### Avoid large queries
+
+
+        If this app is running on a high-usage Retool instance, be careful to
+        avoid querying large time windows since they may containing hundreds of
+        thousands of events. Most of the heavy-lifting powering this app is done
+        by the Postgres database backing the Retool instance. Scanning through a
+        large number of event records can lead to noticeable performance
+        degradataion for other users. Choose the narrowest possible time window
+        for which to see audit logs to avoid this pitfall.
+
+
+        ###### Truncate the `audit_trail_events` table to improve performance
+
+
+        Self-hosted Retool assumes that historical audit log data needs to be
+        preserved indefinitely. Consequently, the size of the
+        `audit_trail_events` table grows monotonically over time. We recommended
+        periodically vaccuming the `audit_trail_events` table based on your
+        organization's audit log preservation requiremenents by directly
+        querying the Retool Postgres database. Alternatively, you may ETL audit
+        event data to an OLAP system like Snowflake or BigQuery and vaccum the
+        Postgres tables periodically if you need to retain or query large
+        amounts of audit event data. 
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: HowItWorksModal
+    height: 0.6
+    width: 12
+createdAt: 2023-03-27T22:54:46.078Z
