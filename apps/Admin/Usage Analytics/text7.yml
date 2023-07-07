@@ -1,0 +1,55 @@
+id: text7
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >
+        #### How it works
+
+
+        This app pulls data from the internal Postgres Database backing this
+        Retool instance. Specifically, it queries the `audit_trail_events`,
+        `page_saves`, and `users` tables. 
+
+
+        This app also comes predefined with SQL queries, which you can duplicate
+        and modify to surface whichever adoption metrics you desire. 
+
+
+        #### Notes
+
+
+        ###### Avoid large queries! 
+
+
+        If this app is running on a high-usage Retool instance, be sure to avoid
+        running large queries. 
+
+
+        ###### Truncating your tables to improve performance
+
+
+        You can truncate these tables by running queries against it. We
+        recommend copying the contents to another (external) DB before doing so
+        to preserve all logs. 
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: HowItWorksModal
+    height: 0.6
+    width: 12
+createdAt: 2022-06-21T23:16:05.192Z

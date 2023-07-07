@@ -1,0 +1,13 @@
+id: $main
+type: frame
+subtype: Frame
+template:
+  ordered:
+    - type: main
+    - sticky: false
+    - style:
+        ordered:
+          - canvas: rgb(247, 247, 247)
+style:
+  ordered: []
+createdAt: 2022-06-16T17:50:53.876Z

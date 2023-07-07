@@ -1,0 +1,155 @@
+id: getUsers
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 2b24fe5e-2a0b-4cb7-99cb-b4f311cc1c5a
+resourceDisplayName: Local DB
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: |-
+        with
+
+        page_views as (
+
+        select
+          "userId" as user_id,
+          count(*) as count_page_views
+        from audit_trail_events
+        where
+          "organizationId" = ANY({{organizationIds.data}})
+          and "createdAt" <= {{ currentTimeRange.value.end }}
+          and "createdAt" > {{ currentTimeRange.value.start }}
+          and "actionType" = 'PAGE_VIEW'
+        group by 1
+
+        ),
+
+        page_saves as (
+
+        select
+          "userId" as user_id,
+          count(*) as count_page_saves,
+          count(distinct "pageId") as count_unique_apps
+        from page_saves
+        where
+          "createdAt" <= {{ currentTimeRange.value.end }}
+          and "createdAt" > {{ currentTimeRange.value.start }}
+        group by 1
+
+        ),
+
+        users as (
+
+        select
+          users.id,
+          users.email,
+          concat(users."firstName", ' ', users."lastName") as name,
+          users."createdAt" as created_at,
+          users."profilePhotoUrl" as profile_photo_url,
+          users."lastLoggedIn" as last_logged_in
+        from users
+
+        )
+
+
+        select 
+          users.*,
+          page_saves.count_page_saves,
+          page_saves.count_unique_apps,
+          page_views.count_page_views
+        from users
+        left join page_saves
+          on page_saves.user_id = users.id
+        left join page_views
+          on page_views.user_id = users.id
+        where
+          name ilike {{ '%' + UserSearchInput.value + '%' }}
+
+        order by count_page_views desc nulls last limit {{ MaxUsers.value }}
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: sql
+    - queryRunTime: null
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: ''
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: ''
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-03-07T20:24:36.021Z
+folder: users

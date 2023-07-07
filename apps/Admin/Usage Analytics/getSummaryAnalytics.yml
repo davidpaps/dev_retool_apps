@@ -1,0 +1,166 @@
+id: getSummaryAnalytics
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 2b24fe5e-2a0b-4cb7-99cb-b4f311cc1c5a
+resourceDisplayName: Local DB
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: |-
+        with
+
+        raw_page_saves as (
+          -- page_saves table doesn't have an index on createdAt, so there's not much we can optimize here
+          select 
+            count(*) filter (
+              where "createdAt" > {{ currentTimeRange.value.start }}
+              and "createdAt" < {{ currentTimeRange.value.end }}) as count_current_page_saves,
+            count(*) filter (
+              where "createdAt" > {{ currentTimeRange.value.startPrev }}
+              and "createdAt" < {{ currentTimeRange.value.start }}) as count_previous_page_saves
+          from page_saves
+
+        ),
+
+        raw_page_views as (
+          select 
+            count(*) filter (
+              where "createdAt" > {{ currentTimeRange.value.start }}
+              and "createdAt" < {{ currentTimeRange.value.end }}) as count_current_page_views,
+            count(*) filter (
+              where "createdAt" > {{ currentTimeRange.value.startPrev }}
+              and "createdAt" < {{ currentTimeRange.value.start }}) as count_previous_page_views
+          from audit_trail_events
+          where "actionType" = 'PAGE_VIEW' AND "createdAt" > {{ currentTimeRange.value.startPrev }} AND "createdAt" < {{ currentTimeRange.value.end }} AND "organizationId" = ANY({{organizationIds.data}}) -- this is necessary to hit (organizationId, createdAt) index
+        ),
+
+        raw_active_users as (
+          select
+            count(distinct "userId") filter (
+              where "createdAt" > {{ currentTimeRange.value.start }}
+              and "createdAt" < {{ currentTimeRange.value.end }}) as count_current_users,
+            count(distinct "userId") filter (
+              where "createdAt" > {{ currentTimeRange.value.startPrev }}
+              and "createdAt" < {{ currentTimeRange.value.start }}) as count_previous_users
+          from audit_trail_events
+          where "actionType" = ANY({{userActions.value}}) AND "createdAt" > {{ currentTimeRange.value.startPrev }} AND "createdAt" < {{ currentTimeRange.value.end }} AND "organizationId" = ANY({{organizationIds.data}}) -- this is necessary to hit (organizationId, createdAt) index
+        ),
+
+        t30_active_users as (
+         select
+            count(distinct "userId") filter (
+              where "createdAt" >= (to_date({{ todaysDate.value }}, 'YYYY-MM-DD') - INTERVAL '30 DAYS') 
+              and "createdAt" < {{ todaysDate.value }}) as count_t30_users,
+            count(distinct "userId") filter (
+              where "createdAt" >= (to_date({{ todaysDate.value }}, 'YYYY-MM-DD') - INTERVAL '60 DAYS')
+              and "createdAt" < (to_date({{ todaysDate.value }}, 'YYYY-MM-DD') - INTERVAL '30 DAYS')) as count_previous_t30_users
+          from audit_trail_events
+          where "actionType" = ANY({{userActions.value}}) AND "createdAt" >= (to_date({{ todaysDate.value }}, 'YYYY-MM-DD') - INTERVAL '60 DAYS') AND "createdAt" < {{ todaysDate.value }} AND "organizationId" = ANY({{organizationIds.data}})
+        ),
+
+        stats as (
+
+          select 
+            *,
+            (count_current_page_saves - count_previous_page_saves)::decimal / nullif(count_previous_page_saves,0)
+              as pct_growth_page_saves,
+            (count_current_page_views - count_previous_page_views)::decimal / nullif(count_previous_page_views,0)
+              as pct_growth_page_views,
+            (count_current_users - count_previous_users)::decimal / nullif(count_previous_users,0)
+              as pct_growth_users,
+              (count_t30_users - count_previous_t30_users)::decimal / nullif(count_previous_t30_users,0) 
+             as pct_growth_t30_users
+          from raw_page_saves
+          left join raw_page_views on true
+          left join raw_active_users on true
+          left join t30_active_users on true
+        )
+
+        select * from stats
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: sql
+    - queryRunTime: null
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: ''
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: ''
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-03-07T19:39:23.947Z
+folder: overview

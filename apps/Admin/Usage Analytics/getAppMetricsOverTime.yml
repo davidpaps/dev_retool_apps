@@ -1,0 +1,135 @@
+id: getAppMetricsOverTime
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 2b24fe5e-2a0b-4cb7-99cb-b4f311cc1c5a
+resourceDisplayName: Local DB
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: |-
+        with 
+
+        page_saves as (
+
+          select
+            date_trunc('week', "createdAt") as week,
+            count(*) as count_page_saves
+          from page_saves
+          
+          where "pageId" = {{ AppTable.selectedRow.data.id }} AND "createdAt" >= {{ currentTimeRange.value.start }}
+          group by 1
+
+        ),
+
+        page_views as (
+
+          select
+            date_trunc('week', "createdAt") as week,
+            count(*) as count_page_views
+          from audit_trail_events
+
+          where 
+            "organizationId" = ANY({{organizationIds.data}})
+            and "createdAt" >= {{ currentTimeRange.value.start }}
+            and "pageName" = {{ AppTable.selectedRow.data.name }}
+            and "actionType" = 'PAGE_VIEW'
+          group by 1
+
+        )
+
+        select
+          page_saves.*,
+          page_views.count_page_views
+        from page_saves 
+        left join page_views
+          on page_views.week = page_saves.week
+
+        where
+          page_saves.week > {{ currentTimeRange.value.start }}
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: sql
+    - queryRunTime: null
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: ''
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: ''
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-03-07T20:43:55.952Z
+folder: pages

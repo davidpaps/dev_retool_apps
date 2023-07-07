@@ -1,0 +1,15 @@
+id: $header
+type: frame
+subtype: Frame
+template:
+  ordered:
+    - type: header
+    - sticky: true
+    - style:
+        ordered:
+          - border-color: rgba(209, 209, 209, 0)
+          - primary-surface: rgba(18, 33, 47, 1)
+          - primary-text: '#ffffff'
+style:
+  ordered: []
+createdAt: 2022-06-22T20:15:30.460Z

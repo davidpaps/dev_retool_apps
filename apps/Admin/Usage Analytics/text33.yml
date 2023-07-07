@@ -1,0 +1,28 @@
+id: text33
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: fixed
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '##### {{AppTable.selectedRow.data.name}}'
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container5
+    subcontainer: '26911'
+    height: 0.8
+    width: 8
+createdAt: 2022-06-22T21:19:14.539Z

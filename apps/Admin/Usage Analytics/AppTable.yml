@@ -1,0 +1,323 @@
+id: AppTable
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: compact
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - name:
+              ordered: []
+          - view_count:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - created_at:
+              ordered:
+                - dateFormat: MMM d, yyyy
+          - count_page_views:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - count_page_saves:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - count_unique_builders:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+    - columnWidths:
+        - object:
+            id: page_name_p
+            value: 368.125
+        - object:
+            id: page_name_a
+            value: 190.125
+        - object:
+            id: folder_name
+            value: 143.5859375
+        - object:
+            id: created_at
+            value: 98
+        - object:
+            id: count_page_views
+            value: 92
+        - object:
+            id: count_page_saves
+            value: 93
+        - object:
+            id: name
+            value: 186
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered:
+          - uuid:
+              ordered:
+                - buttonType: internal-url
+                - url: >-
+                    https://{{ window.location.href.split('/')[2] + '/' + self
+                    }}
+                - newWindow: true
+                - internalUrlPath: 48ecd934-9a66-11ec-8292-a3ada1ae23b3
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - is_module: Module
+          - count_unique_viewers: Unique Viewers
+          - created_at: Created At
+          - name: Name
+          - count_page_views: Page Views
+          - protected: Protected
+          - count_unique_builders: Unique Editors
+          - count_page_saves: Page Saves
+          - folder_name: Folder
+          - page_name_a: Page Name
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - is_module: ''
+          - count_unique_viewers: ''
+          - last_edited_by: ''
+          - folderId: ''
+          - created_at: ''
+          - name: ''
+          - folder_id: ''
+          - page_name_p: ''
+          - count_page_views: ''
+          - protected: ''
+          - view_count: ''
+          - count_unique_builders: ''
+          - count_page_saves: ''
+          - id: ''
+          - uuid: ''
+          - folder_name: ''
+          - page_name_a: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - view_count: NumberDataCell
+          - created_at: DateDataCell
+          - uuid: button
+          - count_page_views: NumberDataCell
+          - count_page_saves: NumberDataCell
+          - count_unique_builders: NumberDataCell
+          - name: default
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: false
+    - _columnVisibility:
+        ordered:
+          - is_module: false
+          - count_unique_viewers: true
+          - last_edited_by: false
+          - folderId: false
+          - created_at: true
+          - name: true
+          - folder_id: false
+          - page_name_p: false
+          - count_page_views: true
+          - protected: false
+          - view_count: true
+          - count_unique_builders: true
+          - count_page_saves: true
+          - id: false
+          - uuid: false
+          - folder_name: true
+          - page_name_a: true
+    - _columnSummaryTypes:
+        ordered:
+          - name: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - is_module: false
+          - count_unique_viewers: true
+          - last_edited_by: false
+          - folderId: false
+          - created_at: true
+          - name: true
+          - folder_id: false
+          - page_name_p: false
+          - count_page_views: true
+          - protected: false
+          - view_count: true
+          - count_unique_builders: true
+          - count_page_saves: true
+          - id: false
+          - uuid: false
+          - folder_name: true
+          - page_name_a: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ getApps.data }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: null
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - view_count: right
+          - created_at: right
+          - uuid: left
+          - count_page_views: right
+          - count_page_saves: right
+          - count_unique_builders: right
+          - name: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered:
+          - name: true
+    - showRefreshButton: false
+    - pageSize: 16
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - border: rgb(224, 224, 224)
+          - headerBackground: rgb(255, 255, 255)
+          - headerAccent: rgb(41, 181, 232)
+          - cellAccent: rgb(41, 181, 232)
+          - selectedRowBackground: rgba(41, 181, 232, 0.1)
+          - hoverRowBackground: rgba(0, 0, 0, 0.03)
+          - toolbarAccent: rgb(41, 181, 232)
+    - actionButtonPosition: left
+    - dynamicRowHeights: true
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - name: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: true
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - uuid: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - uuid: Open
+          - name: >
+              <a href="{{'/apps/' + ((currentRow.folder_name == 'root') ? '' :
+              encodeURI(currentRow.folder_name) + '/' ) +
+              encodeURI(currentRow.name)}}" style='text-decoration: underline
+              dotted' target='_blank'>{{self}}</a>
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - uuid
+        - name
+        - folder_name
+        - id
+        - created_at
+        - folder_id
+        - is_module
+        - protected
+        - count_page_views
+        - count_page_saves
+        - count_unique_builders
+        - last_edited_by
+        - count_unique_viewers
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - uuid
+        - name
+        - folder_name
+        - id
+        - created_at
+        - folder_id
+        - is_module
+        - protected
+        - count_page_views
+        - count_page_saves
+        - count_unique_builders
+        - last_edited_by
+        - count_unique_viewers
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container3
+    subcontainer: 58fd5
+    row: 1
+    height: 15.8
+    width: 7
+createdAt: 2022-06-22T20:47:11.338Z
