@@ -1,10 +1,13 @@
-id: query2
+id: sendWorkflowRequest
 type: datasource
-subtype: WorkflowRun
-resourceName: WorkflowRun
+subtype: RESTQuery
+resourceName: 401e7c43-6719-4487-ab2f-529d74d720ca
+resourceDisplayName: Workflow Environment Test
 template:
   ordered:
     - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -12,10 +15,13 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
-    - workflowParams: ''
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
     - showFailureToaster: true
+    - paginationEnabled: false
     - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
@@ -30,6 +36,7 @@ template:
     - showSuccessToaster: true
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
+    - cookies: ''
     - metadata: null
     - queryRunTime: null
     - changesetObject: ''
@@ -46,10 +53,11 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
@@ -65,14 +73,16 @@ template:
         return data
     - events: []
     - queryTimeout: '10000'
-    - workflowId: 81fcbce5-4f7d-4625-9f0d-56aea9870bf4
+    - workflowId: null
     - requireConfirmation: false
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-07-06T08:21:31.467Z
+createdAt: 2023-07-04T08:41:05.080Z
