@@ -1,0 +1,53 @@
+databaseName: hammerhead_production
+databasePassword: ''
+databaseUsername: retool_internal_user
+description: null
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: postgres
+options:
+  amazon_secret_access_key: ''
+  api_key: ''
+  application_key: ''
+  athena_secret_access_key: ''
+  auth0_access_token: ''
+  auth0_clientSecret: ''
+  authentication: user_password
+  aws_secret_access_key: ''
+  basic_password: ''
+  bearer_token: ''
+  ca_cert: ''
+  client_cert: ''
+  client_cert_and_key: ''
+  client_key: ''
+  connectionString: ''
+  digest_password: ''
+  dynamo_secret_access_key: ''
+  googleToken: ''
+  oauth1_consumer_secret: ''
+  oauth2_access_token: ''
+  oauth2_client_secret: ''
+  oauth2_refresh_token: ''
+  password: ''
+  privateKey: ''
+  privateKeyPass: ''
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  s3_secret_access_key_id: ''
+  serviceAccountKey: ''
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  user_auth_key: ''
+  version: SqlQueryUnified
+outboundRegion: null
+port: '5432'
+ssl: false
+type: postgresql
+uuid: 2b24fe5e-2a0b-4cb7-99cb-b4f311cc1c5a
+version: 1.0.0
+whitelabeled: null
