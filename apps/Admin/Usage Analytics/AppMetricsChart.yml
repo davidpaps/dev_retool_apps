@@ -1,0 +1,144 @@
+id: AppMetricsChart
+type: widget
+subtype: PlotlyChartWidget
+template:
+  ordered:
+    - dataseries:
+        ordered:
+          - '0':
+              ordered:
+                - label: App saves
+                - datasource: '{{  getAppMetricsOverTime.data [''count_page_saves'']}}'
+                - chartType: bar
+                - aggregationType: sum
+                - color: '#DAECFC'
+                - colors:
+                    ordered: []
+                - visible: true
+                - hovertemplate: '<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>'
+          - '1':
+              ordered:
+                - label: App views
+                - datasource: '{{  getAppMetricsOverTime.data [''count_page_views'']}}'
+                - chartType: bar
+                - aggregationType: sum
+                - color: '#55A1E3'
+                - colors:
+                    ordered: []
+                - visible: true
+                - hovertemplate: '<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>'
+    - isDataTemplateDirty: true
+    - datasource: ''
+    - isJsonTemplateDirty: false
+    - groupByDropdown: ''
+    - datasourceInputMode: javascript
+    - datasourceDataType: object
+    - hidden: >-
+        {{  getAppMetricsOverTime.data.count_page_saves.length === 0 &&
+        getAppMetricsOverTime.data.count_page_views.length === 0}}
+    - layout: |-
+        {
+          "title": {
+            "text": "",
+            "font": {
+              "color": "#3D3D3D",
+              "size": 16
+            }
+          },
+             "plot_bgcolor":"rgba(244,244,244,0)",
+          "paper_bgcolor":"rgba(244,244,244,0)",
+          "font": {
+            "family": "Inter",
+            "color": "#979797"
+          },
+          "showlegend": true,
+          "legend": {
+            "xanchor": "center",
+            "x": 0.45,
+            "y": -0.2,
+            "orientation": "h"
+          },
+          "margin": {
+            "l": 10,
+            "r":0,
+            "t": 10,
+            "b": 0,
+            "pad": 2
+          },
+          "hovermode": "closest",
+          "hoverlabel": {
+            "bgcolor": "#000",
+            "bordercolor": "#000",
+            "font": {
+              "color": "#fff",
+              "family": "Inter",
+              "size": 12
+            }
+          },
+          "clickmode": "select+event",
+          "dragmode": "select",
+          "xaxis": {
+            "title": {
+              "text": "",
+              "standoff": 6,
+              "font": {
+                "size": 12
+              }
+            },
+            "type": "date",
+            "tickformat": "",
+            "automargin": true,
+            "fixedrange": true,
+           
+            "zerolinecolor": "#fff"
+          },
+          "yaxis": {
+            "title": {
+              "text": "",
+              "standoff": 6,
+              "font": {
+                "size": 12
+              }
+            },
+            "type": "linear",
+            "tickformat": "",
+            "side":"right",
+            "automargin": true,
+            "fixedrange": true,
+            "zerolinecolor": "#DEDEDE"
+          }
+        }
+    - xAxisDropdown: week
+    - data: ''
+    - isStackSeriesEnabled: false
+    - xAxisTickFormat: ''
+    - skipDatasourceUpdate: false
+    - datasourceJS: '{{  getAppMetricsOverTime.data }}'
+    - yAxisTickFormat: ''
+    - datasourcePluginType: null
+    - xAxisType: date
+    - datasourcePluginId: null
+    - legendAlignment: bottom
+    - isLayoutJsonDirty: true
+    - chartType: bar
+    - title: ''
+    - xAxis: '{{  getAppMetricsOverTime.data .week}}'
+    - groupByMode: dropdown
+    - onPointSelectQuery: ''
+    - xAxisMode: dropdown
+    - shouldShowLegend: true
+    - yAxisTitle: ''
+    - selectedPoints:
+        array: []
+    - xAxisTitle: ''
+    - groupByJS: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: container5
+    subcontainer: '26911'
+    row: 2.400000000000005
+    height: 5.2
+    width: 12
+createdAt: 2022-06-22T20:47:12.162Z

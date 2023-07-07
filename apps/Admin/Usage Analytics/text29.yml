@@ -1,0 +1,31 @@
+id: text29
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: right
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '{{ getTopBuildersOfApp.data.count_page_saves[i] }} saves'
+    - style:
+        ordered:
+          - color: rgb(151, 151, 151)
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: TopEditorsForAppList
+    col: 8
+    height: 0.6
+    width: 4
+createdAt: 2022-06-22T20:47:15.575Z

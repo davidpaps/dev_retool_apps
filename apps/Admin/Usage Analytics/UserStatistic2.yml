@@ -1,0 +1,53 @@
+id: UserStatistic2
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - clickable: false
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: '0'
+    - hidden: false
+    - showSeparators: true
+    - formattingStyle: decimal
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: >-
+        Total number of unique users who have accessed Retool during the last 30
+        days.
+    - currency: USD
+    - value: '{{ getSummaryAnalytics.data.count_t30_users[0] }}'
+    - secondarySignDisplay: trendArrows
+    - suffix: ''
+    - labelCaption: Since last period
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - _disclosedFields:
+        array: []
+    - label: Users (trailing 30 days)
+    - secondaryFormattingStyle: percent
+    - icon: ''
+    - events:
+        ordered: []
+    - enableTrend: false
+    - secondaryValue: '{{ getSummaryAnalytics.data.pct_growth_t30_users[0] }}'
+    - decimalPlaces: null
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    subcontainer: bbeb8
+    row: 1.2000000000000008
+    col: 4
+    height: 0.8
+    width: 4
+createdAt: 2022-06-18T10:21:01.872Z

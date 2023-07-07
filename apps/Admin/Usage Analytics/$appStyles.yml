@@ -1,0 +1,7 @@
+id: $appStyles
+type: setting
+subtype: AppStyles
+template:
+  ordered:
+    - value: ''
+createdAt: 2022-06-22T20:49:13.603Z

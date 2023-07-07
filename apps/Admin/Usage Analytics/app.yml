@@ -1,0 +1,25 @@
+version: 43.0.9
+pageUuid: 28579eae-f289-11ec-9d8d-d723010ebe8b
+appTemplate:
+  mobileAppSettings:
+    object:
+      mobileOfflineModeEnabled: false
+  appThemeId: -1
+  folders:
+    - overview
+    - pages
+    - users
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+  testEntities:
+    array:
+      - object:
+          id: 155901d5-d43d-4133-86e5-f9d593a37a30
+          name: test1
+          body: ''
+          type: test
+          pauseAllQueries: false
+          failureMessage: null
+  customDocumentTitleEnabled: true
+  version: 2.117.7
