@@ -1,0 +1,27 @@
+id: html1
+type: widget
+subtype: HTMLWidget
+template:
+  ordered:
+    - clickable: false
+    - css: |-
+        .myClass {
+          text-align: center;
+        }
+    - hidden: false
+    - html: '{{query1.data.message}}'
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - events:
+        ordered: []
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.6
+    height: 0.2
+    width: 4
+createdAt: 2023-01-17T10:13:19.087Z
