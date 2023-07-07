@@ -1,0 +1,16 @@
+id: jsonExplorer1
+type: widget
+subtype: JSONExplorerWidget
+template:
+  ordered:
+    - value: '{{query1.data}}'
+    - html: false
+    - expandNodes: true
+style:
+  ordered: []
+position2:
+  position2:
+    col: 4
+    height: 6
+    width: 4
+createdAt: 2023-07-04T16:13:13.259Z
