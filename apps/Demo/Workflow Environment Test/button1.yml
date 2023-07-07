@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Button
+    - text: Send Environment to Workflow
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid
@@ -19,7 +19,7 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: query1
+            - pluginId: sendWorkflowRequest
             - targetId: null
             - params:
                 ordered: []
@@ -34,4 +34,5 @@ style:
 position2:
   position2:
     height: 1
+    width: 7
 createdAt: 2023-07-04T16:06:44.046Z
