@@ -1,0 +1,24 @@
+id: query1
+type: datasource
+subtype: RESTQuery
+resourceName: 88a8fe47-d0af-43c0-8b82-ea905fe2212c
+resourceDisplayName: HTTP REST
+template:
+  queryRefreshTime: ''
+  queryDisabledMessage: ''
+  successMessage: ''
+  queryDisabled: ''
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  query: ''
+  privateParams: []
+  data: null
+  showSuccessToaster: true
+  confirmationMessage: null
+  watchedParams: []
+  timestamp: 0
+  runWhenPageLoads: false
+  queryTimeout: '10001'
+  requireConfirmation: false
+  queryThrottleTime: '750'
+createdAt: 2023-07-13T10:18:50.320Z
