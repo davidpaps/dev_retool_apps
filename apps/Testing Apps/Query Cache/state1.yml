@@ -1,0 +1,11 @@
+id: state1
+type: state
+subtype: State
+template:
+  ordered:
+    - _persistedValueGetter: null
+    - _persistedValueSetter: null
+    - persistValue: false
+    - persistedValueKey: ''
+    - value: On Load
+createdAt: 2023-03-08T14:20:41.184Z
