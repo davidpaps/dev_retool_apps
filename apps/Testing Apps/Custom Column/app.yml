@@ -1,0 +1,33 @@
+version: 43.0.9
+pageUuid: 479bde44-015e-11ee-863f-0b60bf5826cd
+appTemplate:
+  experimentalFeatures:
+    object:
+      sourceControlTemplateDehydration: false
+  preloadedAppJavaScript: |-
+    const timeDiff = (start, end) => {
+      
+    const date1 = moment(start);
+    const date2 = moment(end);
+
+    // Calculate the difference
+    const diff = date2.diff(date1);
+
+    // Get the difference in days, hours, and minutes
+    const duration = moment.duration(diff);
+    const days = duration.days();
+    const hours = duration.hours();
+    const minutes = duration.minutes();
+
+    return "Days: " + days + " Hours: " + hours + " Minutes: " + minutes
+
+    }
+
+    window.timeDiff = timeDiff
+  experimentalPerfFeatures:
+    object:
+      serverDepGraphEnabled: false
+      useRuntimeV2: false
+      runtimeV2OptOut: false
+  version: 2.121.2
+  experimentalDataTabEnabled: true
