@@ -1,0 +1,53 @@
+id: button2
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Reset
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: danger
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: resetValue
+            - pluginId: textInput1
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: tableData
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '1000'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{textInput1.value == ""}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    col: 9
+    height: 1
+createdAt: 2023-02-17T12:02:49.507Z
