@@ -1,0 +1,17 @@
+id: richTextEditor3
+type: widget
+subtype: TextEditorWidget
+template:
+  ordered:
+    - value: Email Text for Template 3
+    - selection: null
+    - onBlur: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: '82416'
+    height: 4.999999999999999
+    width: 12
+createdAt: 2022-11-08T10:34:22.462Z

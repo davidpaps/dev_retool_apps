@@ -1,0 +1,88 @@
+id: SendEmail
+type: datasource
+subtype: SMTPQuery
+resourceName: 26ca2264-37bf-4d21-9073-87b091ea86e4
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - toEmail: '{{formatEmailAddresses.data}}'
+    - body: '{{formatEmailBody.data}}'
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - attachment: []
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - showCcBcc: false
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - showReplyTo: false
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - subject: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - fromEmail: david.papamichael@retool.com
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: ''
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - replyToEmail: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - bccEmail: ''
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - ccEmail: ''
+    - bodyType: text
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-11-08T10:35:19.539Z
