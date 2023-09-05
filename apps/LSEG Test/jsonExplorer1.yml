@@ -1,0 +1,17 @@
+id: jsonExplorer1
+type: widget
+subtype: JSONExplorerWidget
+template:
+  ordered:
+    - value: '{{constructPayload.data}}'
+    - html: false
+    - expandNodes: true
+    - hidden: '{{ constructPayload.data == null }}'
+style:
+  ordered: []
+position2:
+  position2:
+    row: 5.000000000000002
+    height: 8
+    width: 9
+createdAt: 2023-07-12T17:36:42.177Z
