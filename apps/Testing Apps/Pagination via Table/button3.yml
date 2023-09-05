@@ -1,0 +1,52 @@
+id: button3
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: '20'
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: pageSize
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '20'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: getUsersQuery
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '1000'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    col: 4
+    height: 1
+    width: 1
+createdAt: 2023-01-23T14:36:30.461Z
