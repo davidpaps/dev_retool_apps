@@ -1,0 +1,42 @@
+id: downloadRawData
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: downloadRawData
+    - showInEditor: false
+    - tooltipText: ''
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: widget
+            - method: exportData
+            - pluginId: table1
+            - targetId: null
+            - params:
+                ordered:
+                  - options:
+                      object:
+                        fileName: export
+                        fileType: csv
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 8.4
+    height: 1
+createdAt: 2023-06-05T08:56:00.959Z
