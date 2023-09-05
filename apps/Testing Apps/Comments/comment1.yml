@@ -1,0 +1,33 @@
+id: comment1
+type: widget
+subtype: NoteWidget
+template:
+  ordered:
+    - defaultValue: ''
+    - tooltipText: ''
+    - newCommentValue: ''
+    - placeholder: Write your note here...
+    - comments:
+        array: []
+    - label: ''
+    - evaluatedKey: user-1
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: query3
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+style:
+  ordered: []
+position2:
+  position2:
+    height: 10.4
+    width: 4
+createdAt: 2023-02-10T14:29:53.519Z
