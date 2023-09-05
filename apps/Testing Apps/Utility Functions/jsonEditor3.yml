@@ -1,0 +1,16 @@
+id: jsonEditor3
+type: widget
+subtype: JSONEditorWidget
+template:
+  ordered:
+    - formDataKey: '{{ self.id }}'
+    - value: '{{localStorage}}'
+    - valid: true
+style:
+  ordered: []
+position2:
+  position2:
+    row: 34.800000000000004
+    height: 6.4
+    width: 4
+createdAt: 2022-11-21T14:17:56.031Z

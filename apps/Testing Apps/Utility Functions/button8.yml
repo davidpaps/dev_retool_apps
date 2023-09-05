@@ -1,0 +1,47 @@
+id: button8
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Show Notification
+    - showInEditor: false
+    - tooltipText: ''
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: >-
+                      utils.showNotification({title:
+                      table1.selectedRow.data.name.common, description:
+                      table1.selectedRow.data.capital[0], notificationType:
+                      'Success', duration: 3})
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.19999999999999996
+    col: 8
+    height: 1
+    width: 2
+createdAt: 2022-11-21T13:25:03.917Z

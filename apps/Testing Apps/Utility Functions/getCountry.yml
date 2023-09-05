@@ -1,0 +1,9 @@
+id: getCountry
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: |
+        return {{ getCountries.data }}
+    - value: ''
+createdAt: 2022-11-21T11:33:44.561Z
