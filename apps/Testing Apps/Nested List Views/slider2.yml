@@ -1,0 +1,43 @@
+id: slider2
+type: widget
+subtype: SliderWidget2
+template:
+  ordered:
+    - iconAfter: ''
+    - hideOutput: false
+    - max: 5
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - step: 1
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '1'
+    - labelCaption: ''
+    - min: '1'
+    - labelWidth: '33'
+    - _disclosedFields:
+        array: []
+    - label: '# Child List Views'
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.19999999999999996
+    col: 7
+    height: 0.6
+    width: 5
+createdAt: 2023-02-10T17:26:52.432Z
