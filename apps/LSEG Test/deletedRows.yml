@@ -1,0 +1,11 @@
+id: deletedRows
+type: state
+subtype: State
+template:
+  ordered:
+    - _persistedValueGetter: null
+    - _persistedValueSetter: null
+    - persistValue: false
+    - persistedValueKey: ''
+    - value: ''
+createdAt: 2023-07-12T16:41:11.003Z

@@ -1,0 +1,30 @@
+id: listView1
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - layoutType: list
+    - showBorder: false
+    - hidden: ''
+    - data: ''
+    - showDropShadow: false
+    - rowKeys: '{{ _.range(listView1.instances) }}'
+    - formDataKey: '{{ self.id }}'
+    - style:
+        ordered:
+          - border-color: canvas
+    - itemWidth: ''
+    - dynamicHeightsEnabled: false
+    - numColumns: '3'
+    - itemHeight: ''
+    - overflowType: scroll
+    - instances: '{{rowNumber.value}}'
+    - direction: vertical
+style:
+  ordered: []
+position2:
+  position2:
+    row: -1.609823385706477e-15
+    width: 12
+createdAt: 2023-07-12T11:46:19.476Z

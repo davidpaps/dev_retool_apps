@@ -1,0 +1,46 @@
+id: button2
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Add New Row
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - border: canvas
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: rowNumber
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '{{rowNumber.value + 1}}'
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: 58b24
+    row: -8.881784197001252e-16
+    col: 5
+    height: 1
+    width: 7
+createdAt: 2023-07-12T16:30:49.782Z
