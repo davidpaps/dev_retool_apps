@@ -1,0 +1,18 @@
+version: 43.0.9
+pageUuid: 7dc91b1e-5f4f-11ed-8570-b778bc79dcc6
+appTemplate:
+  mobileAppSettings:
+    object:
+      mobileOfflineModeEnabled: false
+      mobileOfflineModeDelaySync: false
+  experimentalFeatures:
+    object:
+      sourceControlTemplateDehydration: false
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+      skipDepCycleCheckingEnabled: false
+      serverDepGraphEnabled: false
+      useRuntimeV2: false
+  version: 2.117.7
+  experimentalDataTabEnabled: true

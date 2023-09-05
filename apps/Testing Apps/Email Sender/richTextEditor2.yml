@@ -1,0 +1,16 @@
+id: richTextEditor2
+type: widget
+subtype: TextEditorWidget
+template:
+  ordered:
+    - value: Email Text for Template 2
+    - selection: null
+    - onBlur: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: '79910'
+    width: 12
+createdAt: 2022-11-08T10:33:59.062Z
