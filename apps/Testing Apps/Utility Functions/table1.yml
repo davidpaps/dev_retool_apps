@@ -1,0 +1,268 @@
+id: table1
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - coatOfArms:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: subregion
+            value: 198
+        - object:
+            id: region
+            value: 154
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - alpha2Code: ''
+          - callingCodes: ''
+          - alpha3Code: ''
+          - nativeName: ''
+          - translations: ''
+          - latlng: ''
+          - borders: ''
+          - flags: ''
+          - capital: ''
+          - name: ''
+          - flag: ''
+          - area: ''
+          - population: ''
+          - currencies: ''
+          - altSpellings: ''
+          - topLevelDomain: ''
+          - subregion: ''
+          - region: ''
+          - regionalBlocs: ''
+          - cioc: ''
+          - numericCode: ''
+          - independent: ''
+          - timezones: ''
+          - languages: ''
+          - gini: ''
+          - demonym: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - coatOfArms: ImageDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: false
+    - _columnVisibility:
+        ordered:
+          - translations: false
+          - ccn3: false
+          - latlng: false
+          - flags: false
+          - idd: false
+          - tld: false
+          - area: false
+          - startOfWeek: false
+          - currencies: true
+          - altSpellings: false
+          - cca2: false
+          - cca3: false
+          - status: false
+          - unMember: false
+          - demonyms: false
+          - subregion: false
+          - car: false
+          - landlocked: false
+          - capitalInfo: false
+          - maps: false
+          - postalCode: false
+          - cioc: false
+          - independent: false
+          - gini: false
+          - fifa: false
+    - _columnSummaryTypes:
+        ordered:
+          - coatOfArms: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ getCountry.value }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: name
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - borders: center
+          - capital: center
+          - name: center
+          - flag: center
+          - coatOfArms: center
+          - population: center
+          - currencies: center
+          - subregion: center
+          - region: center
+          - timezones: center
+          - languages: center
+          - continents: center
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: false
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - coatOfArms: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: false
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - languages: '{{_.values(self)[0]}}'
+          - capital: '{{self[0]}}'
+          - currencies: '{{_.values(self)[0].name}}'
+          - timezones: '{{self[0]}}'
+          - continents: '{{self[0]}}'
+          - coatOfArms: '{{self.png}}'
+          - borders: '{{self.join(", ")}}'
+          - name: '{{self.common}}'
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - name
+        - tld
+        - cca2
+        - ccn3
+        - cca3
+        - cioc
+        - independent
+        - status
+        - unMember
+        - capital
+        - languages
+        - currencies
+        - idd
+        - altSpellings
+        - flag
+        - region
+        - subregion
+        - translations
+        - latlng
+        - landlocked
+        - continents
+        - borders
+        - timezones
+        - population
+        - area
+        - demonyms
+        - maps
+        - gini
+        - fifa
+        - car
+        - flags
+        - coatOfArms
+        - startOfWeek
+        - capitalInfo
+        - postalCode
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.4000000000000001
+    height: 12
+    width: 12
+createdAt: 2022-11-21T10:05:34.083Z
