@@ -1,0 +1,17 @@
+{
+  "html1": {
+    "row": 0.6,
+    "height": 0.2,
+    "width": 4
+  },
+  "text1": {
+    "row": 0.2,
+    "col": 4,
+    "height": 0.6,
+    "width": 8
+  },
+  "text2": {
+    "height": 0.6,
+    "width": 4
+  }
+}

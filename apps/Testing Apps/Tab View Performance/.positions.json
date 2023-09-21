@@ -1,0 +1,29 @@
+{
+  "tabbedContainer1": {
+    "row": 0.8,
+    "col": 1,
+    "height": 0.2,
+    "width": 10
+  },
+  "table1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "6b11b",
+    "row": 0.2,
+    "col": 1,
+    "height": 8,
+    "width": 9
+  },
+  "table2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1d471",
+    "col": 2,
+    "height": 8,
+    "width": 9
+  },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  }
+}

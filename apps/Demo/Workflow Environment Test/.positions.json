@@ -1,0 +1,11 @@
+{
+  "button1": {
+    "height": 1,
+    "width": 7
+  },
+  "jsonExplorer1": {
+    "row": 1.2,
+    "height": 12,
+    "width": 7
+  }
+}

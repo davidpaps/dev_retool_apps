@@ -1,0 +1,22 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "479bde44-015e-11ee-863f-0b60bf5826cd",
+  "appTemplate": {
+    "experimentalFeatures": {
+      "object": {
+        "sourceControlTemplateDehydration": false
+      }
+    },
+    "preloadedAppJavaScript": "const timeDiff = (start, end) => {\n  \nconst date1 = moment(start);\nconst date2 = moment(end);\n\n// Calculate the difference\nconst diff = date2.diff(date1);\n\n// Get the difference in days, hours, and minutes\nconst duration = moment.duration(diff);\nconst days = duration.days();\nconst hours = duration.hours();\nconst minutes = duration.minutes();\n\nreturn \"Days: \" + days + \" Hours: \" + hours + \" Minutes: \" + minutes\n\n}\n\nwindow.timeDiff = timeDiff",
+    "experimentalPerfFeatures": {
+      "object": {
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": false,
+        "runtimeV2OptOut": false
+      }
+    },
+    "version": "3.10.1",
+    "experimentalDataTabEnabled": true
+  }
+}

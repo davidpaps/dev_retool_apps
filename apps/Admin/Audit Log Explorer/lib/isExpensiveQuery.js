@@ -1,0 +1,1 @@
+return {{ moment.duration(numberInput1.value,  segmentedControl1.value) > moment.duration(15, 'minutes') ? true : false}};

@@ -1,0 +1,543 @@
+{
+  "AppMetricsChart": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 2.4,
+    "height": 5.2,
+    "width": 12
+  },
+  "AppTable": {
+    "container": "container3",
+    "subcontainer": "58fd5",
+    "row": 1,
+    "height": 15.8,
+    "width": 7
+  },
+  "ApplicationSearchInput": {
+    "container": "container3",
+    "subcontainer": "58fd5",
+    "height": 1,
+    "width": 4
+  },
+  "DateRange": {
+    "subcontainer": "header",
+    "row": 0.8,
+    "col": 9,
+    "height": 1
+  },
+  "HowItWorksModal": {
+    "row": 11.2,
+    "col": 11,
+    "height": 0.8,
+    "width": 1
+  },
+  "MAAChart": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 3,
+    "height": 4,
+    "width": 12
+  },
+  "MAUChart": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 3,
+    "height": 4,
+    "width": 12
+  },
+  "MaxApps": {
+    "container": "container3",
+    "subcontainer": "58fd5",
+    "col": 4,
+    "height": 1
+  },
+  "MaxUsers": {
+    "container": "container3",
+    "subcontainer": "ed82c",
+    "row": 0,
+    "col": 4,
+    "height": 1
+  },
+  "PageSaveStatistic": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 1.2,
+    "height": 0.8,
+    "width": 4
+  },
+  "PageViewStatistic": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 1.2,
+    "col": 4,
+    "height": 0.8,
+    "width": 4
+  },
+  "Tabs": {
+    "container": "container3",
+    "rowGroup": "header",
+    "row": 0,
+    "col": 3,
+    "height": 0.8,
+    "width": 6
+  },
+  "TopEditedAppsForUserList": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 18.4,
+    "height": 3.6,
+    "width": 12
+  },
+  "TopEditorsForAppList": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 18.2,
+    "height": 3.6,
+    "width": 12
+  },
+  "TopViewedAppsForUserList": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 13.8,
+    "height": 3.8,
+    "width": 12
+  },
+  "TopViewersForAppList": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 13.8,
+    "height": 3.6,
+    "width": 12
+  },
+  "UserMetricsChart": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 7.4,
+    "height": 5.4,
+    "width": 12
+  },
+  "UserSearchInput": {
+    "container": "container3",
+    "subcontainer": "ed82c",
+    "height": 1,
+    "width": 4
+  },
+  "UserStatistic": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 1.2,
+    "height": 0.8,
+    "width": 4
+  },
+  "UserStatistic2": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 1.2,
+    "col": 4,
+    "height": 0.8,
+    "width": 4
+  },
+  "UsersTable": {
+    "container": "container3",
+    "subcontainer": "ed82c",
+    "row": 1,
+    "height": 15.8,
+    "width": 7
+  },
+  "container2": {
+    "row": 0,
+    "height": 2,
+    "width": 6
+  },
+  "container3": {
+    "row": 9.2,
+    "height": 2,
+    "width": 12
+  },
+  "container4": {
+    "col": 6,
+    "height": 8.8,
+    "width": 6
+  },
+  "container5": {
+    "container": "container3",
+    "subcontainer": "58fd5",
+    "col": 7,
+    "height": 2,
+    "width": 5
+  },
+  "container6": {
+    "container": "container3",
+    "subcontainer": "ed82c",
+    "col": 7,
+    "height": 2,
+    "width": 5
+  },
+  "container7": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 7.6,
+    "height": 5.2,
+    "width": 12
+  },
+  "container8": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 2,
+    "height": 5.4,
+    "width": 12
+  },
+  "containerTitle2": {
+    "container": "container2",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle4": {
+    "container": "container4",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle5": {
+    "container": "container5",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle6": {
+    "container": "container6",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle7": {
+    "container": "container7",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle8": {
+    "container": "container8",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "divider10": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 0.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider11": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 2.2,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider15": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 17.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider16": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 1.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider17": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 13,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider18": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 1.2,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider19": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 13,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider20": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 17.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider8": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 0.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider9": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 2.2,
+    "height": 0.2,
+    "width": 12
+  },
+  "html1": {
+    "subcontainer": "header",
+    "height": 0.2,
+    "width": 6
+  },
+  "link1": {
+    "subcontainer": "header",
+    "row": 0.8,
+    "height": 0.6,
+    "width": 1
+  },
+  "spacer1": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "spacer2": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 1,
+    "height": 0.2,
+    "width": 12
+  },
+  "spacer3": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 2,
+    "height": 0.2,
+    "width": 12
+  },
+  "spacer4": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "spacer5": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 1,
+    "height": 0.2,
+    "width": 12
+  },
+  "spacer6": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 2,
+    "height": 0.2,
+    "width": 12
+  },
+  "spacer7": {
+    "row": 8.8,
+    "height": 0.4,
+    "width": 12
+  },
+  "spacer8": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 12.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "spacer9": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 12.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "text20": {
+    "subcontainer": "header",
+    "row": 0.2,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text21": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "height": 0.6,
+    "width": 12
+  },
+  "text22": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "row": 2.4,
+    "height": 0.6,
+    "width": 12
+  },
+  "text23": {
+    "container": "container4",
+    "subcontainer": "bbeb8",
+    "height": 0.6,
+    "width": 12
+  },
+  "text24": {
+    "container": "TopViewedAppsForUserList",
+    "height": 0.6,
+    "width": 7
+  },
+  "text25": {
+    "container": "TopViewedAppsForUserList",
+    "col": 7,
+    "height": 0.6,
+    "width": 5
+  },
+  "text26": {
+    "container": "TopEditedAppsForUserList",
+    "height": 0.6,
+    "width": 7
+  },
+  "text27": {
+    "container": "TopEditedAppsForUserList",
+    "col": 7,
+    "height": 0.6,
+    "width": 5
+  },
+  "text28": {
+    "container": "TopEditorsForAppList",
+    "height": 0.6,
+    "width": 8
+  },
+  "text29": {
+    "container": "TopEditorsForAppList",
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text3": {
+    "subcontainer": "header",
+    "row": 0.2,
+    "height": 0.6,
+    "width": 8
+  },
+  "text30": {
+    "container": "TopViewersForAppList",
+    "height": 0.6,
+    "width": 8
+  },
+  "text31": {
+    "container": "TopViewersForAppList",
+    "col": 8,
+    "height": 1.2,
+    "width": 4
+  },
+  "text32": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 1.6,
+    "height": 0.6,
+    "width": 12
+  },
+  "text33": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "height": 0.8,
+    "width": 8
+  },
+  "text34": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 0.8,
+    "height": 0.6,
+    "width": 9
+  },
+  "text35": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 13.2,
+    "height": 0.6,
+    "width": 12
+  },
+  "text36": {
+    "container": "container5",
+    "subcontainer": "26911",
+    "row": 17.6,
+    "height": 0.6,
+    "width": 12
+  },
+  "text37": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "height": 0.6,
+    "width": 12
+  },
+  "text38": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 0.6,
+    "height": 0.6,
+    "width": 12
+  },
+  "text39": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 1.4,
+    "height": 0.6,
+    "width": 12
+  },
+  "text4": {
+    "container": "container2",
+    "subcontainer": "bbeb8",
+    "row": 2.4,
+    "height": 0.6,
+    "width": 12
+  },
+  "text40": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 13.2,
+    "height": 0.6,
+    "width": 12
+  },
+  "text41": {
+    "container": "container6",
+    "subcontainer": "e9e15",
+    "row": 17.8,
+    "height": 0.6,
+    "width": 12
+  },
+  "text42": {
+    "container": "container7",
+    "subcontainer": "f5d1c",
+    "row": 2,
+    "height": 0.6,
+    "width": 12
+  },
+  "text43": {
+    "container": "container8",
+    "subcontainer": "f5d1c",
+    "row": 2,
+    "height": 0.6,
+    "width": 12
+  },
+  "text5": {
+    "container": "container3",
+    "rowGroup": "header",
+    "height": 0.8
+  },
+  "text7": {
+    "container": "HowItWorksModal",
+    "height": 0.6,
+    "width": 12
+  }
+}

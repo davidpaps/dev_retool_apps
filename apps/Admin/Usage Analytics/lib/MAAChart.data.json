@@ -1,0 +1,31 @@
+[
+  {
+    "name": "count_users",
+    "x": {{ getAppsOverTime.data .month}},
+    "y": {{ getAppsOverTime.data.count_apps}},
+    "type": "line",
+    "hovertemplate": "<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>",
+    "transforms": [
+      {
+        "type": "sort",
+        "target": {{ getAppsOverTime.data.month}},
+        "order": "ascending"
+      },
+      {
+        "type": "aggregate",
+        "groups": {{ getAppsOverTime.data .month}},
+        "aggregations": [
+          {
+            "target": "y",
+            "func": "sum",
+            "enabled": true
+          }
+        ]
+      }
+    ],
+    "marker": {
+      "color": "#033663"
+    },
+    "mode": "lines+markers"
+  }
+]

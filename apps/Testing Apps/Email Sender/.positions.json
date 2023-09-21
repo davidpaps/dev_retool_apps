@@ -1,0 +1,41 @@
+{
+  "button1": {
+    "row": 7.4,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "richTextEditor1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "39a46",
+    "width": 12
+  },
+  "richTextEditor2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "79910",
+    "width": 12
+  },
+  "richTextEditor3": {
+    "container": "tabbedContainer1",
+    "subcontainer": "82416",
+    "height": 5,
+    "width": 12
+  },
+  "tabbedContainer1": {
+    "row": 0.4,
+    "col": 8,
+    "height": 7,
+    "width": 4
+  },
+  "table1": {
+    "row": 0.4,
+    "height": 8,
+    "width": 8
+  },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  }
+}

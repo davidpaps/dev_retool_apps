@@ -1,0 +1,1 @@
+select * from retool_managed_note_comment

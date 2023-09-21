@@ -1,0 +1,27 @@
+{
+  "button1": {
+    "row": 0.2,
+    "col": 4,
+    "height": 1
+  },
+  "jsonExplorer1": {
+    "row": 3.6,
+    "height": 6,
+    "width": 7
+  },
+  "select1": {
+    "row": 0.2,
+    "height": 1,
+    "width": 4
+  },
+  "text1": {
+    "row": 1.8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text2": {
+    "row": 1.8,
+    "col": 4,
+    "height": 0.6
+  }
+}
