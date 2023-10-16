@@ -14,5 +14,10 @@
   "table1": {
     "height": 14.2,
     "width": 8
+  },
+  "table2": {
+    "row": 1.4,
+    "col": 9,
+    "height": 8
   }
 }
