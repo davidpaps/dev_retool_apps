@@ -1,6 +1,6 @@
 {
   "jsonExplorer1": {
-    "row": 15.6,
+    "row": 17.8,
     "col": 1,
     "height": 7,
     "width": 10
@@ -17,6 +17,11 @@
   },
   "table2": {
     "row": 1.4,
+    "col": 9,
+    "height": 8
+  },
+  "table3": {
+    "row": 9.8,
     "col": 9,
     "height": 8
   }
