@@ -9,13 +9,13 @@
   "ssl": false,
   "editPrivilege": false,
   "options": {
+    "sshHost": "",
+    "version": "SqlQueryUnified",
+    "sshUsername": "",
     "authentication": "user_password",
     "queryEditorModes": { "allowGuiMode": true, "allowSqlMode": true },
-    "sshHost": "",
-    "sshPrivateKeyName": "",
     "sshTunnelEnabled": false,
-    "sshUsername": "",
-    "version": "SqlQueryUnified"
+    "sshPrivateKeyName": ""
   },
   "environment": "production",
   "dynamicallyQueryable": false,
