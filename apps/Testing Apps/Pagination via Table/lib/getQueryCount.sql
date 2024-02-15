@@ -1,1 +1,0 @@
-select count(*) from audit_trail_events
