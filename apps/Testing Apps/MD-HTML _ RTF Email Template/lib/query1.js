@@ -1,1 +1,0 @@
-return text1.value
