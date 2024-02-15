@@ -1,1 +1,0 @@
-SELECT * from audit_trail_events
