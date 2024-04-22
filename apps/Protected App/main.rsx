@@ -1,4 +1,9 @@
 <App>
+  <Text
+    id="text1"
+    value="👋 **Hello {{ current_user.firstName || 'friend' }}!**"
+    verticalAlign="center"
+  />
   <Table
     id="table1"
     cellSelection="none"
@@ -74,43 +79,6 @@
       label="Created at"
       position="center"
       size={96}
-      summaryAggregationMode="none"
-    />
-    <Column
-      id="b160c"
-      alignment="left"
-      cellTooltipMode="overflow"
-      format="tags"
-      formatOptions={{ automaticColors: true }}
-      groupAggregationMode="none"
-      key="teams"
-      label="Teams"
-      placeholder="Select options"
-      position="center"
-      size={260}
-      summaryAggregationMode="none"
-    />
-    <Column
-      id="80197"
-      alignment="left"
-      format="link"
-      groupAggregationMode="none"
-      key="website"
-      label="Website"
-      position="center"
-      size={200}
-      summaryAggregationMode="none"
-    />
-    <Column
-      id="923cf"
-      alignment="left"
-      cellTooltipMode="overflow"
-      format="multilineString"
-      groupAggregationMode="none"
-      key="text"
-      label="Bio"
-      position="center"
-      size={100}
       summaryAggregationMode="none"
     />
     <ToolbarButton
