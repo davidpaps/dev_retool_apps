@@ -10,8 +10,8 @@
         "globalQueryToastDuration": 4.5
       }
     },
-    "shortlink": false,
-    "version": "3.40.0",
+    "shortlink": "protected-apps",
+    "version": "3.48.0",
     "experimentalDataTabEnabled": true
   }
 }
