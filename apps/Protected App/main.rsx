@@ -54,7 +54,7 @@
         id="cef90"
         alignment="left"
         format="tag"
-        formatOptions={{ automaticColors: true }}
+        formatOptions={{ map: { automaticColors: true } }}
         groupAggregationMode="none"
         key="role"
         label="Role"
@@ -90,7 +90,7 @@
         alignment="left"
         cellTooltipMode="overflow"
         format="tags"
-        formatOptions={{ automaticColors: true }}
+        formatOptions={{ map: { automaticColors: true } }}
         groupAggregationMode="none"
         key="teams"
         label="Teams"
