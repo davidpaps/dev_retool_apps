@@ -20,7 +20,7 @@ template:
     - workflowRunId: null
     - showFailureToaster: true
     - query: |-
-        let result = code1.data += 1
+        let result = code1.data += 10
 
         return result
     - playgroundQueryUuid: ''
