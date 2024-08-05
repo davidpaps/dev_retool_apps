@@ -19,7 +19,7 @@ template:
     - runWhenModelUpdates: true
     - workflowRunId: null
     - showFailureToaster: true
-    - query: return 5
+    - query: return 6
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
