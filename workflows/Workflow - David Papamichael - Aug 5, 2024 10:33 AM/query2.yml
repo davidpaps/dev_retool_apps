@@ -25,7 +25,7 @@ template:
     - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: '{{query1.data}}'
+    - query: '{{query1.data + 1}}'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
