@@ -8,6 +8,16 @@
     sticky={null}
     type="main"
   >
-    <Button id="button1" text="Button" />
+    <Button id="button1" text="Button">
+      <Event
+        event="click"
+        method="openPage"
+        params={{ ordered: [{ pageName: "defaultPage" }] }}
+        pluginId=""
+        type="util"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
   </Frame>
 </Screen>
