@@ -164,5 +164,16 @@
         />
       </ToolbarButton>
     </Table>
+    <Button id="button2" text="Button">
+      <Event
+        event="click"
+        method="openPage"
+        params={{ ordered: [{ pageName: "page1" }] }}
+        pluginId=""
+        type="util"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
   </Frame>
 </Screen>
