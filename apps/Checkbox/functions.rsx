@@ -23,7 +23,7 @@
     allowedGroups={["Builder"]}
     editorMode="gui"
     resourceDisplayName="retool_db"
-    resourceName="758e4c69-3206-49a4-aca2-13a3160b9c13"
+    resourceName="1b810930-2c28-4cd5-912b-6f60ed4ed673"
     runWhenModelUpdates={false}
   />
 </GlobalFunctions>
