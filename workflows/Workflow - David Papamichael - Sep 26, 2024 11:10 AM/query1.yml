@@ -9,7 +9,7 @@ template:
     - allowedGroupIds: []
     - toEmail: david.papamichael@retool.com
     - streamResponse: false
-    - body: TESTING 4
+    - body: TESTING 5
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - attachment: []
