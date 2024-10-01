@@ -10,7 +10,13 @@
     "width": 8
   },
   "table2": {
-    "row": 17.8,
+    "row": 20.4,
+    "height": 8,
+    "width": 8
+  },
+  "table3": {
+    "row": 12.4,
+    "col": 3,
     "height": 8,
     "width": 8
   },
