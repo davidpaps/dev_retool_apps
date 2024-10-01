@@ -5,6 +5,12 @@
     "height": 1,
     "width": 2
   },
+  "button2": {
+    "row": 30.4,
+    "col": 5,
+    "height": 1,
+    "width": 2
+  },
   "table1": {
     "height": 8,
     "width": 8
@@ -24,5 +30,10 @@
     "row": 11.8,
     "col": 1,
     "height": 1
+  },
+  "text2": {
+    "row": 30.2,
+    "col": 1,
+    "height": 0.6
   }
 }
