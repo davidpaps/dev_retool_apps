@@ -10,7 +10,7 @@
   "ssl": null,
   "editPrivilege": null,
   "options": {
-    "baseURL": "https://api.sampleapis.com/simpsons/characters",
+    "baseURL": "https://api.sampleapis.com/simpsons",
     "headers": [["", ""]],
     "urlparams": [["", ""]],
     "auth0_domain": "",
