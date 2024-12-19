@@ -14,16 +14,6 @@
     />
   </Header>
   <View id="84fe8" viewKey="View 1">
-    <Image
-      id="image1"
-      fit="contain"
-      heightType="fixed"
-      horizontalAlign="center"
-      src={
-        "{{ theme.primary == \"#016fd0\" ? 'https://pbs.twimg.com/profile_images/986855869827768321/exMxTOCm_400x400.jpg' : theme.primary == '#ff365a' ? 'https://static-00.iconduck.com/assets.00/airbnb-icon-2048x2048-kuw3ebuv.png' :  theme.primary == '#101f4a' ? 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNJKIbP2VNXbsy2DO3elcGkAHf0njMNo3M_q7vaf_3DyvmdERWNnf7kHpp5lncU7Xyn4&usqp=CAU' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRST1KYT8iTQHxcFKKQ9CpB4NT9iib_nC-j9w&s'}}"
-      }
-      style={{ ordered: [] }}
-    />
     <Rating
       id="rating1"
       allowHalf={true}
@@ -31,6 +21,16 @@
       labelPosition="top"
       max={5}
       value={4.5}
+    />
+    <Image
+      id="image1"
+      fit="contain"
+      heightType="fixed"
+      horizontalAlign="center"
+      src={
+        "{{ theme.primary == \"#016fd0\" ? 'https://pbs.twimg.com/profile_images/986855869827768321/exMxTOCm_400x400.jpg' : theme.primary == '#ff365a' ? 'https://static-00.iconduck.com/assets.00/airbnb-icon-2048x2048-kuw3ebuv.png' :  theme.primary == '#fdd93b' ? 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNJKIbP2VNXbsy2DO3elcGkAHf0njMNo3M_q7vaf_3DyvmdERWNnf7kHpp5lncU7Xyn4&usqp=CAU' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRST1KYT8iTQHxcFKKQ9CpB4NT9iib_nC-j9w&s'}}"
+      }
+      style={{ ordered: [] }}
     />
     <Statistic
       id="statistic1"
