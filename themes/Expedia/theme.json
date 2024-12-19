@@ -104,12 +104,12 @@
           "borderRadius": "30px",
           "canvas": "#ffffff",
           "info": "#101f4a",
-          "primary": "#101f4a",
+          "primary": "#fdd93b",
           "surfacePrimary": "#ffffff",
           "surfacePrimaryBorder": "rgba(16, 31, 74, 0.1)",
           "surfaceSecondary": "#ffffff",
           "surfaceSecondaryBorder": "rgba(16, 31, 74, 0.1)",
-          "textDark": "#fdd93b"
+          "textDark": "#101f4a"
         },
         "tokenValues": {}
       }
