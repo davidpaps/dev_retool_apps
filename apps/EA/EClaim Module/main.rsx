@@ -40,6 +40,14 @@
         <Option id="d2113" value="Option 2" />
         <Option id="d85e2" value="Option 3" />
       </Select>
+      <Rating
+        id="rating1"
+        allowHalf={true}
+        label=""
+        labelPosition="top"
+        max={5}
+        value={4.5}
+      />
       <Button
         id="button2"
         style={{ ordered: [] }}
