@@ -31,6 +31,12 @@
     "height": 1.2,
     "width": 12
   },
+  "rating1": {
+    "container": "moduleContainer",
+    "col": 5,
+    "height": 0.8,
+    "width": 2
+  },
   "select1": {
     "container": "moduleContainer",
     "col": 3,
