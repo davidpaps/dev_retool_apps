@@ -166,6 +166,100 @@
         />
       </ToolbarButton>
     </Table>
+    <Chart
+      id="heatMap1"
+      barGap={null}
+      barGroupGap={null}
+      barMode="group"
+      barOrientation=""
+      chartType="heatmap"
+      gradientColorArray={[
+        [0, "{{ theme.canvas }}"],
+        [1, "{{ theme.primary }}"],
+      ]}
+      heatmapShowScale={true}
+      legendPosition="none"
+      selectedPoints="[]"
+      stackedBarTotalsDataLabelPosition="none"
+      title={null}
+      xAxisLineWidth={1}
+      xAxisRangeMax=""
+      xAxisRangeMin=""
+      xAxisTickFormatMode="gui"
+      xAxisTitleStandoff={20}
+      yAxis2LineWidth={1}
+      yAxis2RangeMax=""
+      yAxis2RangeMin=""
+      yAxis2ShowTickLabels={true}
+      yAxis2TickFormatMode="gui"
+      yAxis2TitleStandoff={20}
+      yAxisLineWidth={1}
+      yAxisRangeMax=""
+      yAxisRangeMin=""
+      yAxisTickFormatMode="gui"
+      yAxisTitleStandoff={20}
+    >
+      <Series
+        id="0"
+        aggregationType="none"
+        colorArray={{ array: [null] }}
+        colorArrayDropDown={{ array: [null] }}
+        colorInputMode="colorArrayDropDown"
+        connectorLineColor="#000000"
+        dataLabelPosition="none"
+        datasourceMode="source"
+        decreasingBorderColor="{{ theme.danger }}"
+        decreasingColor="{{ theme.danger }}"
+        filteredGroups={null}
+        filteredGroupsMode="source"
+        gradientColorArray={{
+          array: [
+            { array: ["0.0", "{{ theme.success }}"] },
+            { array: ["1.0", "{{ theme.primary }}"] },
+          ],
+        }}
+        groupBy={{ array: [] }}
+        groupByDropdownType="source"
+        groupByStyles={{}}
+        hoverTemplate="(%{x}, %{y})<br>%{z:}<extra></extra>"
+        hoverTemplateMode="source"
+        increasingBorderColor="{{ theme.success }}"
+        increasingColor="{{ theme.success }}"
+        lineColor="{{ theme.primary }}"
+        lineDash="solid"
+        lineShape="linear"
+        lineUnderFillMode="none"
+        lineWidth={2}
+        markerBorderColor={null}
+        markerBorderWidth={0}
+        markerColor="{{ theme.primary }}"
+        markerSize={6}
+        markerSymbol="circle"
+        name={null}
+        showMarkers={false}
+        textTemplate={null}
+        textTemplateMode="manual"
+        type="heatmap"
+        waterfallBase={0}
+        waterfallMeasures={null}
+        waterfallMeasuresMode="source"
+        xData={{ array: [1, 2, 3, 4, 5] }}
+        xDataMode="manual"
+        yAxis="y"
+        yData={{ array: [1, 2, 3, 4, 5] }}
+        yDataMode="manual"
+        zData={{
+          array: [
+            { array: [80, 76, 53, 80, 53] },
+            { array: [52, 50, 42, 53, 73] },
+            { array: [83, 41, 20, 38, 48] },
+            { array: [41, 24, 19, 38, 24] },
+            { array: [1, 85, 15, 31, 15] },
+          ],
+        }}
+        zDataMode="manual"
+      />
+    </Chart>
     <Image
       id="image1"
       heightType="fixed"
